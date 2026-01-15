@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="inicio" className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#000d1a]">
+    <section id="inicio" className="relative h-screen flex flex-col justify-center overflow-hidden bg-[#000d1a]">
       {/* Background Video con Filtro de Contraste Alto */}
       <div className="absolute inset-0 z-0">
         <video
@@ -52,23 +52,23 @@ const Hero: React.FC = () => {
         <div className="h-full w-full" style={{ backgroundImage: 'radial-gradient(circle, #D4AF37 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
       </div>
 
-      {/* Contenido principal */}
-      <div className="relative z-10 text-center px-6 max-w-[1400px] mx-auto pt-10">
-        <h1 className="flex flex-col items-center justify-center animate-[heroSlideUp_1.4s_cubic-bezier(0.19,1,0.22,1)] drop-shadow-2xl">
-          <span className="font-bodoni text-white text-2xl md:text-5xl lg:text-6xl font-light italic tracking-[0.2em] uppercase mb-2 md:mb-4 opacity-90">
+      {/* Contenido principal - Alineado a la Izquierda */}
+      <div className="relative z-10 px-6 md:px-16 max-w-[1600px] w-full mx-auto pt-10">
+        <h1 className="flex flex-col items-start justify-center animate-[heroSlideUp_1.4s_cubic-bezier(0.19,1,0.22,1)] drop-shadow-2xl">
+          <span className="font-bodoni text-white text-xl md:text-4xl lg:text-5xl font-light italic tracking-[0.2em] uppercase mb-2 md:mb-4 opacity-90 ml-1">
             {content.hero.preTitle}
           </span>
-          <span className="font-bodoni text-5xl md:text-8xl lg:text-9xl leading-[0.9] font-black italic uppercase text-white gold-shimmer tracking-tight">
+          <span className="font-bodoni text-5xl md:text-7xl lg:text-9xl leading-[0.9] font-black italic uppercase text-white gold-shimmer tracking-tight text-left">
             {content.hero.title}
           </span>
         </h1>
         
-        <div className="mt-12 flex flex-col items-center justify-center w-full max-w-3xl mx-auto border-t border-white/10 pt-10 gap-8">
-          <p className="text-center text-sm md:text-base text-gray-300 font-light max-w-xl leading-relaxed tracking-wide">
+        <div className="mt-10 flex flex-col items-start w-full max-w-3xl border-t border-white/10 pt-8 gap-8">
+          <p className="text-left text-sm md:text-base text-gray-300 font-light max-w-xl leading-relaxed tracking-wide">
             {content.hero.subtitle}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-start w-full sm:w-auto">
             <a 
               href="#cotizar"
               onClick={(e) => handleScrollTo(e, 'cotizar')}
