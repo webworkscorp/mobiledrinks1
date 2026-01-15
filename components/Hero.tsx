@@ -63,23 +63,23 @@ const Hero: React.FC = () => {
           </span>
         </h1>
         
-        <div className="mt-12 md:mt-12 flex flex-col md:flex-row items-center justify-between w-full max-w-4xl mx-auto border-t border-white/10 pt-10 gap-10">
-          <p className="text-left text-sm md:text-base text-gray-300 font-light max-w-md leading-relaxed tracking-wide">
+        <div className="mt-12 flex flex-col items-center justify-center w-full max-w-3xl mx-auto border-t border-white/10 pt-10 gap-8">
+          <p className="text-center text-sm md:text-base text-gray-300 font-light max-w-xl leading-relaxed tracking-wide">
             {content.hero.subtitle}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-5 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a 
               href="#cotizar"
               onClick={(e) => handleScrollTo(e, 'cotizar')}
-              className="px-8 py-4 bg-white text-black text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] transition-all duration-300 min-w-[200px] flex justify-center items-center"
+              className="px-8 py-4 bg-white text-black text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] transition-all duration-300 min-w-[180px] flex justify-center items-center"
             >
               {content.hero.ctaPrimary}
             </a>
             <a 
               href="#servicios"
               onClick={(e) => handleScrollTo(e, 'servicios')}
-              className="px-8 py-4 border border-white/30 text-white text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-white/5 hover:border-white transition-all duration-300 min-w-[200px] flex justify-center items-center backdrop-blur-sm"
+              className="px-8 py-4 border border-white/30 text-white text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-white/5 hover:border-white transition-all duration-300 min-w-[180px] flex justify-center items-center backdrop-blur-sm"
             >
               {content.hero.ctaSecondary}
             </a>
