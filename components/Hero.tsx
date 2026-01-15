@@ -52,34 +52,34 @@ const Hero: React.FC = () => {
         <div className="h-full w-full" style={{ backgroundImage: 'radial-gradient(circle, #D4AF37 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
       </div>
 
-      {/* Contenido principal - Alineado a la Izquierda */}
-      <div className="relative z-10 px-6 md:px-16 max-w-[1600px] w-full mx-auto pt-10">
+      {/* Contenido principal - Alineado MUY a la Izquierda */}
+      <div className="relative z-10 px-4 md:px-8 max-w-[1600px] w-full mx-auto pt-10">
         <h1 className="flex flex-col items-start justify-center animate-[heroSlideUp_1.4s_cubic-bezier(0.19,1,0.22,1)] drop-shadow-2xl">
-          <span className="font-bodoni text-white text-xl md:text-4xl lg:text-5xl font-light italic tracking-[0.2em] uppercase mb-2 md:mb-4 opacity-90 ml-1">
+          <span className="font-bodoni text-white text-lg md:text-3xl lg:text-4xl font-light italic tracking-[0.2em] uppercase mb-2 md:mb-4 opacity-90 ml-1">
             {content.hero.preTitle}
           </span>
-          <span className="font-bodoni text-5xl md:text-7xl lg:text-9xl leading-[0.9] font-black italic uppercase text-white gold-shimmer tracking-tight text-left">
+          <span className="font-bodoni text-4xl md:text-6xl lg:text-8xl leading-[0.9] font-black italic uppercase text-white gold-shimmer tracking-tight text-left">
             {content.hero.title}
           </span>
         </h1>
         
-        <div className="mt-10 flex flex-col items-start w-full max-w-3xl border-t border-white/10 pt-8 gap-8">
-          <p className="text-left text-sm md:text-base text-gray-300 font-light max-w-xl leading-relaxed tracking-wide">
+        <div className="mt-8 flex flex-col items-start w-full max-w-2xl border-t border-white/10 pt-6 gap-6">
+          <p className="text-left text-sm md:text-base text-gray-300 font-light max-w-lg leading-relaxed tracking-wide">
             {content.hero.subtitle}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-5 justify-start w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start w-full sm:w-auto">
             <a 
               href="#cotizar"
               onClick={(e) => handleScrollTo(e, 'cotizar')}
-              className="px-8 py-4 bg-white text-black text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] transition-all duration-300 min-w-[180px] flex justify-center items-center"
+              className="px-6 py-3 md:px-8 md:py-4 bg-white text-black text-[9px] md:text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] transition-all duration-300 min-w-[160px] flex justify-center items-center"
             >
               {content.hero.ctaPrimary}
             </a>
             <a 
               href="#servicios"
               onClick={(e) => handleScrollTo(e, 'servicios')}
-              className="px-8 py-4 border border-white/30 text-white text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-white/5 hover:border-white transition-all duration-300 min-w-[180px] flex justify-center items-center backdrop-blur-sm"
+              className="px-6 py-3 md:px-8 md:py-4 border border-white/30 text-white text-[9px] md:text-[10px] font-syncopate font-bold uppercase tracking-[0.2em] hover:bg-white/5 hover:border-white transition-all duration-300 min-w-[160px] flex justify-center items-center backdrop-blur-sm"
             >
               {content.hero.ctaSecondary}
             </a>
